@@ -1,0 +1,53 @@
+body {
+  /* pamata krāsa */
+  background-color: rgb(130, 241, 40);
+}
+
+#konteiners {
+  /* elements ar id=konteiners, konteinera formatējums */
+  width: 500px;
+  height:750px;
+  background-color: rgb(205, 248, 14);
+  border: 10px solid rgb(4, 4, 17); 
+  
+}
+ 
+/* elementa ar id=entry formatējums (ievades lauks) */
+.entry {
+  width: 410px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 2px;
+  font-size: 40px;
+  font-weight: bold;
+  border: 5px solid rgb(4, 4, 17);
+}
+
+ /* elementa ar id=numBut formatējuma, (skaitļu pogas) */
+.numBut{
+  height: 100px;
+  width: 100px;
+  margin: 10px 4px;
+  border: 3px solid rgb(4, 4, 17);
+  font-size: 25px;
+ 
+  /* elementa ar id=mathBut formatējuma, (darbību un dzēšanas pogas) */
+}
+.mathBut{
+  height: 100px;
+  width: 100px;
+  margin: 10px 4px;
+  border: 3px solid rgb(4, 4, 17);
+  font-size: 25px;
+}
+
+/* elementa ar id=equalBut formatējuma, (vienādības zīme) */
+.equalBut{
+  height: 100px;
+  width: 430px;
+  margin: 10px 4px;
+  border: 3px solid rgb(4, 4, 17);
+  font-size: 25px;
+
+}

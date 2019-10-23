@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulators</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" charset="UTF-8" src="js/main.js"></script>
+  
+ 
+  <script type="text/javascript" charset="UTF-8">
+    window.onload = () => {
+      const k = new Kalkulators("konteiners");
+    }
+  </script>
+</head>
+
+<body>
+  <h1> <center> <font color = red> KALKULATORS</h1></center></font>
+  <div id="konteiners">
+   
+    <!-- ievades lauks-->
+    <div class="row">
+     
+      <input type="text" id="entry" class="entry text-right" value="0" readonly>
+      </form>
+  </div>
+
+<!-- Pogas rindā -->
+<div class="row">
+  <button id="numBut" type="button" class="btn btn-primary numBut" onclick="numButPress(1)">1</button>
+  <button id="numBut" type="button" class="btn btn-primary numBut" onclick="numButPress(2)">2</button>
+  <button id="numBut" type="button" class="btn btn-primary numBut" onclick="numButPress(3)">3</button>
+  <button id="mathBut" type="button" class="btn btn-success mathBut" onclick="mathButPress('+')">+</button>
+</div>
+<div class="row">
+  <button id="numBut" type="button" class="btn btn-primary numBut" onclick="numButPress(4)">4</button>
+  <button id="numBut" type="button" class="btn btn-primary numBut" onclick="numButPress(5)">5</button>
+  <button id="numBut" type="button" class="btn btn-primary numBut" onclick="numButPress(6)">6</button>
+  <button id="mathBut" type="button" class="btn btn-success mathBut" onclick="mathButPress('-')">-</button>
+</div>
+<div class="row">
+  <button id="numBut" type="button" class="btn btn-primary numBut" onclick="numButPress(7)">7</button>
+  <button id="numBut" type="button" class="btn btn-primary numBut" onclick="numButPress(8)">8</button>
+  <button id="numBut" type="button" class="btn btn-primary numBut" onclick="numButPress(9)">9</button>
+  <button id="mathBut" type="button" class="btn btn-success mathBut" onclick="mathButPress('*')">*</button>
+</div>
+<div class="row">
+  <button id="numBut" type="button" class="btn btn-primary numBut" onclick="numButPress(0)">0</button>
+  <button id="clearBut" type="button" class="btn btn-danger numBut" onclick="clearButPress()">DZĒST</button>
+  <button id="decimalBut" type="button" class="btn btn-primary numBut" onclick="numButPress('.')">.</button>
+  <button id="mathBut" type="button" class="btn btn-success mathBut" onclick="mathButPress('/')">/</button>
+</div>
+<div class="row">
+  <button id="decimalBut" type="button" class="btn btn-info equalBut" onclick="equalButPress()">=</button>
+</div>
+
+  </div>
+  
+</body>
+</html>
